@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<title>rhyton</title>
+		
+		<link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/foundation.min.css" />	
+		<link rel="stylesheet" type="text/css" href="/static/css/showRoom.css" />
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type='text/javascript' src="/static/js/jquery.min.js"></script>
+		<script type='text/javascript' src="/static/js/showRoom.js"></script>
+		<script type='text/javascript' src="/static/js/jquery.hoverIntent.min.js"></script> 
+
+
+	</head>
+
+	<body id="bdy" >
+
+		
+		<div class="row " id="headerBar" style="background-color:#ffffff;z-index:-2;">
+			<div class="columns large-2 small-2 large-offset-1">
+				<h4 class="headerItem">HOME</h4>
+			</div>
+			<div class="columns large-2 small-2">
+				<h4 class="headerItem">CONTACT</h4>
+			</div>
+			<div class="columns large-2 small-2" align="center">
+				<img src="/static/image/logo.png" style="margin-top:5px;margin-bottom:5px;height:70px;">
+			</div>
+			<div class="columns large-2 small-2">
+				<h4 class="headerItem">PROJECTS</h4>
+			</div>
+			<div class="columns large-2 small-2 end">
+				<h4 class="headerItem">SHOWROOM</h4>
+			</div>
+		</div>
+			<div class="row grid" >
+				<div class="columns small-12" >
+					<div class="row"  >
+						<div class="columns large-3" >
+							<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)"class="image" id="p1" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%;z-index:-1;">
+
+							
+						</div>
+						<div class="columns large-3">
+							<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p2" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%;z-index:-1;">
+
+						</div>
+						<div class="columns large-3" >
+							<img onmouseover="showDesc(this)"  onmouseout="hideDesc(this)" class="image" id="p3" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%; z-index:-1;">
+
+						</div>
+						<div class="columns large-3 end" >
+							<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p4" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%; z-index:-1;">
+
+						</div>
+					</div>
+					<div class="row" style="margin-top:2em; ">
+						<div class="columns small-12">
+							<p id="text" style="color:#ffffff;font-size:1.4em;text-align:center; z-index:1000;">
+							
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="shadow" style="position:absolute;left:0px;top:0px;height:100%;width:100%;opacity:0.7;background-color:#000000;display:none;z-index:100;">
+			</div>
+
+			
+	</body>
+</html>
+

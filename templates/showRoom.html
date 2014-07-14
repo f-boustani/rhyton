@@ -34,37 +34,49 @@
 				<h4 class="headerItem">PROJECTS</h4>
 			</div>
 			<div class="columns large-2 small-2 end">
-				<h4 class="headerItem">SHOWROOM</h4>
+				<h4 class="headerItem" style="background-color:#bbbbbb; color:#ffffff;">SHOWROOM</h4>
 			</div>
 		</div>
 			<div class="row grid" >
-				<div class="columns small-12" >
-					<div class="row"  >
-						<div class="columns large-3" >
-							<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)"class="image" id="p1" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%;z-index:-1;">
 
-							
-						</div>
-						<div class="columns large-3">
-							<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p2" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%;z-index:-1;">
+				<div class="columns large-12" style="padding:0px;height:100%;">
+					<div class="row" style="margin:0px;height:70%;" >
 
+						<div class="columns large-1" style="padding:0px;height:100%;"  >
+							<img id="pre" src="/static/image/prev.png" onclick="Pre_gallery()" class="pre_next" style="left:0%; top:35%; width:50px; height:100px; display:inline; ">
 						</div>
-						<div class="columns large-3" >
-							<img onmouseover="showDesc(this)"  onmouseout="hideDesc(this)" class="image" id="p3" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%; z-index:-1;">
 
-						</div>
-						<div class="columns large-3 end" >
-							<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p4" src="/static/images/thumb/2.jpg"  style="width:500; top: 9%; z-index:-1;">
+						<div class="columns large-10">
+							<div class="row" style="margin:0px;">
+								<div class="columns large-4" align="center">
+									<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p1" src="/static/gallery/1.jpg"  style="z-index:-1;">
+								</div>
 
+								<div class="columns large-4" align="center">
+									<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p2" src="/static/gallery/2.jpg"  style="z-index:-1;">
+								</div>
+
+								<div class="columns large-4" align="center">
+									<img onmouseover="showDesc(this)" onmouseout="hideDesc(this)" class="image" id="p3" src="/static/gallery/3.jpg"  style="z-index:-1;">
+								</div>
+
+							</div>
 						</div>
+						<div class="columns large-1" style="padding:0px;height:100%;">
+							<img id="next" onclick="Next_gallery()" class="pre_next" src="/static/image/next.png" style="right:0%; top:35%; width:50px; height:100px; display:inline; ">
+						</div>
+
 					</div>
-					<div class="row" style="margin-top:2em; ">
-						<div class="columns small-12">
-							<p id="text" style="color:#ffffff;font-size:1.4em;text-align:center; z-index:1000;">
+					<div class="row" style="margin:0px;padding:0px;">
+						<div class="columns large-12">
+							<p  id="text" style=" display:none; color:#ffffff;font-size:1.4em;font-family:Segoe UI Light; text-align:center; z-index:1000;">
 							
 							</p>
 						</div>
 					</div>
+
+					
+					
 				</div>
 			</div>
 			<div id="shadow" style="position:absolute;left:0px;top:0px;height:100%;width:100%;opacity:0.7;background-color:#000000;display:none;z-index:100;">

@@ -26,61 +26,56 @@
 				<img src="/static/image/logo.png" style="margin-top:5px;margin-bottom:5px;height:70px;">
 			</div>
 			<div class="columns large-2 small-2">
-				<h4 class="headerItem">PROJECTS</h4>
+				<h4 class="headerItem" style="background-color:#bbbbbb; color:#ffffff;">PROJECTS</h4>
 			</div>
 			<div class="columns large-2 small-2 end">
-				<h4 class="headerItem">PRODUCTS</h4>
+				<h4 class="headerItem">SHOWROOM</h4>
 			</div>
 		</div>
 			<div id="main_grid" class="row grid">
-				<div class="columns small-12">
-					<div class="row">
-						<div class="columns small-12">
-							<p style="color:#0B8289;font-size:2em;font-family:proReqular; text-align:center; ">
-							project name
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="columns large-5 large-offset-1">
-							<img id="photo_name" src="/static/images/thumb/2.jpg">
-						</div>
-						<div class="columns large-5 end">
-							<img src="/static/images/thumb/2.jpg">
-						</div>
-					</div>
-					<div class="row">
-						<div class="columns large-5 large-offset-1">
-							<p style="color:#ffffff;font-size:2em;font-family:proReqular; text-align:center; ">
-							before
-							</p>
-						</div>
-						<div class="columns large-5 end">
-							<p style="color:#ffffff;font-size:2em;font-family:proReqular; text-align:center; ">
-							after
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="columns large-12">
-							<p id="more" style="color:#0B8289;font-size:1.5em;font-family:proReqular; text-align:center; cursor:pointer ">
-							click for more photo
-							</p>
-						</div>
-					</div>
+				<div class="columns small-12" style="padding:0px;height:100%;">
+					<div class="row" style="margin:0px;height:100%;">
 
-				</div>
-<!--				
-				
-				<div class="columns large-3 end">
-					<img  class="image" id="p4" src="/static/images/thumb/2.jpg" title="fariba" style="width:500; top: 9%;">
+						<div class="columns large-1" style="padding:0px;height:100%;"  >
+							<img id="pre" src="/static/image/prev.png" onclick="Pre()" class="pre_next" style="left:0%; top:42.66%; width:50px; height:100px; display:inline; ">
+						</div>
+						<div class="columns large-10">
+							<div class="row" style="margin:0px;">
+								<div class="columns large-12">
+									<p id="name" style="text-align:center;font-size:2em;color:#0B8289; font-family:proReqular;">
+									Project1
+									</p>
+								</div>
+							</div>
+							<div class="row" style="margin:0px;margin-top:1em;">
+								<div class="columns large-6" align="center">
+									<img class="image" id="before" src="/static/images/thumb/1b.jpg">
 
-				</div>
+									<p style="color:#ffffff;font-size:2em;font-family:Segoe UI Light; text-align:center; ">
+										Before
+									</p>
+								</div>
+								<div class="columns large-6" align="center">
+									<img class="image" id="after" src="/static/images/thumb/1a.jpg">
 
-				<div id="plate" style="display:none; opacity:0.8; z-index:800; top:0; left:0; width:0; height:0;">
-				
+									<p style="color:#ffffff;font-size:2em;font-family:Segoe UI Light; text-align:center; ">
+										After
+									</p>
+								</div>
+							</div>
+							<div class="row" style="margin:0px;">
+								<div class="columns large-12">
+									<p id="more" onclick="more()" style="color:#0B8289;font-size:1.5em;font-family:Segoe UI Light; text-align:center; cursor:pointer; ">
+									click for more photo
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="columns large-1" style="padding:0px;height:100%;">
+							<img id="next" onclick="Next()" class="pre_next" src="/static/image/next.png" style="right:0%; top:42.66%; width:50px; height:100px; display:inline; ">
+						</div>
+					</div>
 				</div>
-			-->
 
 			</div>
 			
@@ -88,8 +83,32 @@
 			<div id="shadow" style="position:absolute;left:0px;top:0px;height:100%;width:100%;opacity:0.6;background-color:#000000;display:none;z-index:100;">
 			</div>
 
-			<div id="img_grid" class=" row grid" style=" display: none;position:absolute;top:11.5%; z-index:1000; " >
-				<p id="back" style="color:#ffffff;font-size:1.5em;font-family:proReqular;top:0; cursor:pointer">back</p>
+			<div id="img_grid" class=" row img_grid" style=" display: none;" >
+
+				<img onclick="back()" src="/static/image/close.png" style="top:0%; cursor:pointer; ">
+				
+
+				<div class="columns small-12">
+					<p id="project_name" style="color:#0B8289;font-size:2em;font-family:proReqular; text-align:center; ">
+					project name
+					</p>
+				</div>
+				<div class="row">
+					<div class="columns large-4 " align="center">
+						<img class="images" id="p1" src=""  style=" display:none; top:9%;">
+
+					</div>
+					<div class="columns large-4 " align="center">
+						<img class="images" id="p2" src=""  style="display:none; top:9%;">
+
+					</div>
+					<div class="columns large-4 " align="center">
+						<img class="images" id="p3" src=""  style="display:none;top:9%;">
+
+					</div>
+				</div>
+
+
 				
 			</div>
 

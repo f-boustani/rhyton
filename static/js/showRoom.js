@@ -17,6 +17,7 @@ function unshadow()
 function imReady()
 {
 
+
 }
 function showDesc(x){
 
@@ -38,21 +39,25 @@ function Next_gallery(){
 
 	if(prePage<lpage)
 	{
+		$('#pre').css({'opacity':'1'});
+		
 		
         var index=3*(prePage+1).toString();
         var photo = '/static/gallery/';
         var current = (3*prePage)+1;
         for (var i = index+1; i < index+4; i++) {
         	
+
         	document.getElementById("p"+current.toString()).src=photo+i.toString()+".jpg";
         	document.getElementById("p"+current.toString()).id="p"+i.toString();
+        	$("#p"+i.toString()).css({'display':'block'});
         	current++;
         };
                     
 		prePage++;
 	}
 	else
-		alarm();
+		alarm('next');
 	
 }
 
@@ -61,7 +66,7 @@ function Pre_gallery(){
 	if(prePage>0)
 	{
 		
-       
+        $('#next').css({'opacity':'1'});
         var index=3*prePage;
         var c= index-2;
         var temp=index+1;
@@ -69,6 +74,7 @@ function Pre_gallery(){
         for (var i = c; i < index+1; i++) {
         	document.getElementById("p"+temp.toString()).src=photo+i.toString()+".jpg";
         	document.getElementById("p"+temp.toString()).id="p"+i.toString();
+        	$("#p"+i.toString()).css({'display':'block'});
         	temp++;
 
         };
@@ -76,16 +82,16 @@ function Pre_gallery(){
 		prePage--;
 	}
 	else
-		alarm();
+		alarm('pre');
 
 }
 
-function alarm()
+function alarm(x)
 {
-	$('#shadow').css({'width':'100%','height':'100%','z-index':'-10','display':'block'});
-	$('#shadow').fadeOut(1500,function(){
-        	$('#shadow').css({'width':'0%','height':'0%','z-index':'-100'});
-        });
+	
+	$('#'+x).css({'opacity':'0.3'});
+        	
+	
 
 }
 

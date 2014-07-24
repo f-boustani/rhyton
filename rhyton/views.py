@@ -17,3 +17,8 @@ def projects(request):
 
 def showRoom(request):
 	return render_to_response('showRoom.html',{})
+
+
+def mail(request):
+
+        print 'send mail'

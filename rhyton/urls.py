@@ -9,4 +9,5 @@ urlpatterns = patterns('',
 	(r'^$', home),
         (r'^contact_us/$', contact_us),
         (r'^projects/$', projects),
-        (r'^showRoom/$', showRoom),)
+        (r'^showRoom/$', showRoom),
+        (r'^mail/$', mail),)
